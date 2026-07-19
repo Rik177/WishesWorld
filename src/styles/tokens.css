@@ -1,0 +1,25 @@
+:root {
+  --bg-deep: #1a1030;
+  --bg-mid: #2d1b4e;
+  --purple: #7b5cff;
+  --violet: #a78bfa;
+  --blue: #4f8cff;
+  --sky: #7dd3fc;
+  --orange: #ff8a4c;
+  --amber: #ffb347;
+  --coral: #ff6b6b;
+  --text: #fff7f0;
+  --text-soft: rgba(255, 247, 240, 0.78);
+  --text-muted: rgba(255, 247, 240, 0.55);
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-strong: rgba(255, 255, 255, 0.14);
+  --border: rgba(255, 255, 255, 0.16);
+  --success: #86efac;
+  --danger: #fda4af;
+  --shadow: 0 24px 60px rgba(20, 8, 40, 0.45);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

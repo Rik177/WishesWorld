@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB86B"/>
+      <stop offset="45%" stop-color="#FF7B9C"/>
+      <stop offset="100%" stop-color="#7C5CFF"/>
+    </linearGradient>
+
+    <linearGradient id="tag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9B6A"/>
+      <stop offset="100%" stop-color="#E76FFF"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="#141227"/>
+
+  <!-- Moon -->
+  <path
+    fill="url(#moon)"
+    d="M37 8
+       A22 22 0 1 0 54 43
+       A18 18 0 1 1 37 8Z"/>
+
+  <!-- Star -->
+  <path
+    fill="#FFD77B"
+    d="M47 13
+       L49 18
+       L54 20
+       L49 22
+       L47 27
+       L45 22
+       L40 20
+       L45 18Z"/>
+
+  <!-- Gift Tag -->
+  <g transform="translate(34 38) rotate(18)">
+      <rect
+        width="15"
+        height="18"
+        rx="3"
+        fill="url(#tag)"/>
+      <circle
+        cx="7.5"
+        cy="4"
+        r="1.6"
+        fill="#FFF"/>
+  </g>
+</svg>
