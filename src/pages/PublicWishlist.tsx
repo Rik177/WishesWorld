@@ -308,14 +308,7 @@ export function PublicWishlist() {
       <header className="wishlist-header">
         <h1>{wishlist.title}</h1>
         <p className="muted">{subtitle}</p>
-        <div
-          style={{
-            display: 'flex',
-            gap: '0.75rem',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-          }}
-        >
+        <div className="wishlist-toolbar">
           {guest && (
             <span className="guest-badge">
               Ты: <span style={{ fontSize: '1.2rem' }}>{guest.emoji}</span>

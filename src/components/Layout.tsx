@@ -15,7 +15,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <nav className="topnav">
           {user ? (
             <>
-              <NavLink to="/dashboard">Мои вишлисты</NavLink>
+              <NavLink to="/dashboard">Мои</NavLink>
               <NavLink to="/wishlist/new">Создать</NavLink>
               <button type="button" className="linkish" onClick={() => signOut()}>
                 Выйти

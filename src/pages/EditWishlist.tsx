@@ -166,19 +166,9 @@ export function EditWishlist() {
 
   return (
     <div className="panel">
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          gap: '0.75rem',
-          flexWrap: 'wrap',
-        }}
-      >
+      <div className="page-header" style={{ marginBottom: 0 }}>
         <div>
           <h1 className="page-title">Редактирование</h1>
-          {/* <p className="page-lead" style={{ marginBottom: 0 }}>
-            /w/{wishlist.slug}
-          </p> */}
         </div>
         <div className="row-actions">
           <Link className="btn btn-xs btn-secondary" to={`/w/${wishlist.slug}`}>

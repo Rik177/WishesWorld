@@ -44,16 +44,7 @@ export function Dashboard() {
 
   return (
     <div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'flex-end',
-          gap: '1rem',
-          flexWrap: 'wrap',
-          marginBottom: '1.25rem',
-        }}
-      >
+      <div className="page-header">
         <div>
           <h1 className="page-title">Мои вишлисты</h1>
           <p className="page-lead" style={{ marginBottom: 0 }}>

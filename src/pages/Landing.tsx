@@ -6,9 +6,7 @@ export function Landing() {
 
   return (
     <section className="hero-landing">
-      <p className="brand-mark" style={{ fontSize: '1rem', margin: 0 }}>
-        для друзей · без спойлеров
-      </p>
+      <p className="hero-eyebrow">для друзей · без спойлеров</p>
       <h1 className="hero-brand">WishesWorld</h1>
       <h2 className="hero-title">Мир желаний, где подарки не пересекаются</h2>
       <p className="hero-sub">

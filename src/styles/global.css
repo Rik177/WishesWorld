@@ -118,12 +118,36 @@ textarea {
   width: min(920px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 2rem 0 4rem;
+  padding-bottom: max(4rem, env(safe-area-inset-bottom));
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.wishlist-toolbar {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .page-center {
   min-height: 50vh;
   display: grid;
   place-items: center;
+}
+
+.hero-eyebrow {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  letter-spacing: 0.02em;
 }
 
 .hero-landing {
@@ -872,4 +896,217 @@ textarea {
 
 .confirmed-flash {
   animation: pulse 0.5s var(--ease);
+}
+
+/* —— Mobile —— */
+@media (max-width: 720px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .topbar {
+    padding: 0.75rem 0.9rem;
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-mark {
+    font-size: 1.05rem;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .topnav {
+    gap: 0.55rem;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+
+  .main {
+    width: calc(100% - 1.25rem);
+    padding: 1.25rem 0 3rem;
+    padding-bottom: max(3rem, env(safe-area-inset-bottom));
+  }
+
+  .hero-landing {
+    min-height: auto;
+    padding: 1.5rem 0 2rem;
+    gap: 0.9rem;
+  }
+
+  .hero-brand {
+    font-size: clamp(2.4rem, 14vw, 3.4rem);
+  }
+
+  .hero-title {
+    max-width: none;
+    font-size: 1.25rem;
+  }
+
+  .hero-sub {
+    max-width: none;
+    font-size: 0.98rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-row .btn {
+    width: 100%;
+  }
+
+  .page-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .page-header .btn {
+    width: 100%;
+  }
+
+  .panel {
+    padding: 1.1rem;
+    border-radius: 14px;
+  }
+
+  .list-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 0.9rem;
+  }
+
+  .row-actions {
+    width: 100%;
+  }
+
+  .row-actions .btn {
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .claim-item {
+    grid-template-columns: auto 1fr;
+    gap: 0.7rem;
+    padding: 0.85rem;
+  }
+
+  .claim-item .btn {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0.15rem;
+  }
+
+  .claim-actions {
+    flex-direction: column;
+    position: sticky;
+    bottom: 0.75rem;
+    z-index: 5;
+    padding: 0.65rem;
+    margin-left: -0.15rem;
+    margin-right: -0.15rem;
+    border-radius: 14px;
+    background: rgba(18, 10, 32, 0.72);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+  }
+
+  .claim-actions .btn {
+    width: 100%;
+  }
+
+  .manual-row {
+    grid-template-columns: auto 1fr;
+    gap: 0.55rem;
+  }
+
+  .manual-row .btn {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .cart-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .emoji-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+
+  .emoji-btn {
+    font-size: 1.55rem;
+    min-height: 3rem;
+  }
+
+  .modal {
+    padding: 1.15rem;
+    max-height: min(90vh, 100%);
+    overflow-y: auto;
+  }
+
+  .modal-backdrop {
+    padding: 0.75rem;
+    align-items: flex-end;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+
+  .wishlist-toolbar {
+    gap: 0.45rem;
+  }
+
+  .field input,
+  .field textarea,
+  .item-editor-row input,
+  .manual-compose input {
+    font-size: 16px; /* без зума на iOS */
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  .cart-link:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-mark span {
+    display: none;
+  }
+
+  .topnav {
+    font-size: 0.8rem;
+    gap: 0.4rem;
+  }
+
+  .emoji-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .btn.btn-xs {
+    padding: 0 0.6rem;
+    font-size: 0.78rem;
+  }
 }
